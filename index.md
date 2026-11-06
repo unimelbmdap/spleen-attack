@@ -2,12 +2,9 @@
 layout: default
 ---
 
-An educational game about the human spleen and its functions.
-
 ## About
 
-A short, engaging paragraph about the game — who it's for (e.g., students, age group), 
-what they'll learn, and what makes the gameplay fun or unique.
+An educational game about the human spleen and its functions.
 
 
 ## Download
@@ -28,7 +25,7 @@ Developed by:
 
 ## Terms of Use
 
-© 2026 The University of Melbourne (MDAP). All rights reserved.
+© 2026 The University of Melbourne. All rights reserved.
 
 This game is provided free of charge for educational and personal use. 
 You may download and play the game, and share it with students or colleagues 
