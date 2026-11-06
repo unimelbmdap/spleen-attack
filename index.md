@@ -4,9 +4,9 @@ layout: default
 
 # Spleen Attack
 
-An educational game that teaches [topic] through [mechanic/gameplay style].
+An educational game about the human spleen and its functions.
 
-![Gameplay Screenshot](images/screenshot1.png)
+![Gameplay Screenshot](images/SpleenAttack_Logo.png)
 
 ## About
 
