@@ -2,8 +2,6 @@
 layout: default
 ---
 
-![Gameplay Screenshot](images/SpleenAttack_Logo.png)
-
 An educational game about the human spleen and its functions.
 
 ## About
