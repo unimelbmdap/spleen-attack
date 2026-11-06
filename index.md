@@ -2,21 +2,15 @@
 layout: default
 ---
 
-# Spleen Attack
+![Gameplay Screenshot](images/SpleenAttack_Logo.png)
 
 An educational game about the human spleen and its functions.
-
-![Gameplay Screenshot](images/SpleenAttack_Logo.png)
 
 ## About
 
 A short, engaging paragraph about the game — who it's for (e.g., students, age group), 
 what they'll learn, and what makes the gameplay fun or unique.
 
-## Screenshots
-
-<img src="images/screenshot2.png" width="600">
-<img src="images/screenshot3.png" width="600">
 
 ## Download
 
@@ -29,4 +23,26 @@ what they'll learn, and what makes the gameplay fun or unique.
 
 ## Credits
 
-Developed by [team/names], University of Melbourne MDAP.
+Developed by:
+- Gabriele Marini (MDAP)
+- Edoardo Tescari (MDAP)
+- Ashraful Haque (Doherty Institute)
+
+## Terms of Use
+
+© 2026 The University of Melbourne (MDAP). All rights reserved.
+
+This game is provided free of charge for educational and personal use. 
+You may download and play the game, and share it with students or colleagues 
+for non-commercial educational purposes.
+
+You may not modify, reverse-engineer, sell, or otherwise commercially 
+exploit this software without prior written permission from the developers.
+
+Screenshots and promotional materials from this page may be used in 
+educational or academic presentations with appropriate credit.
+
+This software is provided "as is", without warranty of any kind. The 
+developers are not liable for any damages arising from its use.
+
+For permissions or inquiries, contact: ashraful.haque@unimelb.edu.au
