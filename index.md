@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Spleen Attack!!
+## About
 
 An educational game about the human spleen and its functions.
 
