@@ -3,9 +3,13 @@
 
 @import "{{ site.theme }}";
 
+body {
+  background: #eef6fb;
+}
+
 .page-header {
   padding: 40px 20px;
-  background: #ffffff;
+  background: #eef6fb;
   text-align: center;
   position: relative;
 }
