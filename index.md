@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## About
+## Spleen Attack!!
 
 An educational game about the human spleen and its functions.
 
@@ -18,7 +18,9 @@ An educational game about the human spleen and its functions.
 
 ## Credits
 
-Developed by:
+Spleen Attack!! is a project of the Melbourne Data Analytics Platform (MDAP) and the Peter Doherty Institute for Infection and Immunity.
+
+Developers:
 - Gabriele Marini (MDAP)
 - Edoardo Tescari (MDAP)
 - Ashraful Haque (Doherty Institute)
