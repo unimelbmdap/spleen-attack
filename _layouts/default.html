@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    {% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class="page-header">
+      <img src="{{ '/images/SpleenAttack_Logo.png' | relative_url }}" alt="Spleen Attack" class="banner-image">
+    </section>
+
+    <section class="main-content">
+      {{ content }}
+
+    </section>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  padding: 40px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.banner-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
