@@ -16,6 +16,10 @@ An educational game about the human spleen and its functions.
 - OS: Windows / Mac / Linux
 - [Any other specs/requirements]
 
+## Instructions for Installations and Use
+
+...
+
 ## Credits
 
 Spleen Attack!! is a project of the Melbourne Data Analytics Platform (MDAP) and the Peter Doherty Institute for Infection and Immunity.
