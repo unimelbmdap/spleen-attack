@@ -4,7 +4,19 @@ layout: default
 
 ## About
 
-An educational game about the human spleen and its functions.
+Spleen Attack!! is an educational game that uses scientific data from a [peer-reviewed research paper](https://www.cell.com/cell-reports/fulltext/S2211-1247(24)00645-4) to show you the internal structure of an immune organ, the spleen, and how this structure is critical for fighting infectious diseases & cancer.
+
+<figure class="paper-figure">
+  <a href="https://doi.org/10.1016/j.celrep.2024.114317">
+    <img src="{{ '/images/gr3_lrg.jpg' | relative_url }}" alt="Research Paper Fig. 3E" class="paper-image">
+  </a>
+</figure>
+
+<p class="paper-ref">
+  Williams CG, Moreira ML, Asatsuma T, …, Haque A.
+  <em>Plasmodium</em> infection induces phenotypic, clonal, and spatial diversity among differentiating CD4<sup>+</sup> T cells.
+  <em>Cell Reports</em>. 2024;43(6):114317. [<a href="https://www.cell.com/cell-reports/fulltext/S2211-1247(24)00645-4">URL</a>]
+</p>
 
 
 ## Download

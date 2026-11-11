@@ -100,6 +100,39 @@ body {
   box-sizing: border-box;
 }
 
+// The paper's figure, centred in the panel; it shrinks to fit on narrow screens.
+.paper-figure {
+  margin: 1.5rem 0 0.75rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.paper-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+// The paper's citation, under the figure.
+.main-content .paper-ref {
+  margin: 0 0 1rem;
+  padding: 0.6rem 0 0.6rem 1rem;
+  border-left: 3px solid rgba(255, 196, 107, 0.6);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(234, 220, 221, 0.85);
+
+  a {
+    word-break: break-all;   // long URLs wrap instead of overflowing on phones
+  }
+}
+
 @media (max-width: 600px) {
   .partner-logo {
     position: static;
