@@ -1,8 +1,11 @@
 title: Spleen Attack
 description: An educational game about the human spleen and its functions.
 theme: jekyll-theme-cayman
+# Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX). Leave empty to turn analytics off.
+google_analytics: G-R4HWQ52475
 # The background's demo page, notes and data-export script aren't part of the site.
 exclude:
   - WebBackground/index.html
   - WebBackground/README.md
   - WebBackground/tools
+  - tools

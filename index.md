@@ -8,7 +8,7 @@ Spleen Attack!! is an educational game that uses scientific data from a [peer-re
 
 <figure class="paper-figure">
   <a href="https://doi.org/10.1016/j.celrep.2024.114317">
-    <img src="{{ '/images/gr3_lrg.jpg' | relative_url }}" alt="Research Paper Fig. 3E" class="paper-image">
+    <img src="{{ '/images/gr3_dark.webp' | relative_url }}" alt="Research Paper Fig. 3E" class="paper-image">
   </a>
 </figure>
 

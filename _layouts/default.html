@@ -11,6 +11,17 @@
     <script type="importmap">
       { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" } }
     </script>
+    {%- if site.google_analytics and jekyll.environment == "production" %}
+    <!-- Google Analytics (GA4). The measurement ID is set in _config.yml; local previews
+         (jekyll serve) don't load it, so they don't count as visits. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {%- endif %}
   </head>
   <body>
     <section class="page-header">
