@@ -2,15 +2,19 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
+    <script type="importmap">
+      { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" } }
+    </script>
   </head>
   <body>
     <section class="page-header">
-      <img src="{{ '/images/UoM_Logo_Vert_Housed_CMYK.jpg' | relative_url }}" alt="University of Melbourne" class="partner-logo unimelb-logo">
+      <img src="{{ '/images/MDAP logo 2023 - horizontal.png' | relative_url }}" alt="University of Melbourne" class="partner-logo unimelb-logo">
       <img src="{{ '/images/Doherty-Institute.png' | relative_url }}" alt="Doherty Institute" class="partner-logo doherty-logo">
       <img src="{{ '/images/SpleenAttack_Logo.png' | relative_url }}" alt="Spleen Attack" class="banner-image">
     </section>
@@ -70,5 +74,12 @@
             <span>PLATFORM</span>
         </p>
     </section>
+
+    <!-- Animated cell plane behind the page (WebBackground/). Scrolling tilts the camera from
+         straight above the plane towards the game's own view. -->
+    <script type="module">
+      import { initCellsBackground } from "{{ '/WebBackground/cells-background.js' | relative_url }}";
+      window.cellsBackground = initCellsBackground({ journey: true });
+    </script>
   </body>
 </html>

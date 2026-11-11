@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spleen Attack</title>
+  <!-- Demo page: the animated cell plane as a full-screen background behind placeholder content.
+       Scrolling down plays the game's stage 1 → stage 2 transition in the background.
+       Serve this folder over HTTP (e.g. `npx serve WebBackground` or `python3 -m http.server`)
+       — ES modules don't load from file://. -->
+  <style>
+    /* The page colour goes on <html> only: an opaque <body> background would cover the
+       fixed background canvas (it sits at z-index -1). */
+    html { background: #1a0608; }
+    body { margin: 0; min-height: 100%; color: #f3e9ea;
+           font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    section { min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+              justify-content: center; text-align: center; padding: 24px 16px; box-sizing: border-box; }
+    h1 { font-size: clamp(2.4rem, 7vw, 5rem); margin: 0 0 .2em; letter-spacing: .02em;
+         text-shadow: 0 2px 24px rgba(0,0,0,.6); }
+    h2 { font-size: clamp(1.8rem, 4.5vw, 3rem); margin: 0 0 .3em; text-shadow: 0 2px 18px rgba(0,0,0,.7); }
+    p  { max-width: 36rem; font-size: 1.1rem; line-height: 1.5; opacity: .85;
+         text-shadow: 0 1px 8px rgba(0,0,0,.8); }
+    .buttons { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 1.5em; }
+    .buttons a { padding: 12px 22px; border-radius: 8px; background: #d21e1e; color: #fff;
+                 text-decoration: none; font-weight: 600; }
+    .buttons a.secondary { background: rgba(255,255,255,.12); }
+    .hint { position: absolute; bottom: 24px; font-size: .9rem; opacity: .6; }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <section>
+    <h1>Spleen Attack!</h1>
+    <p>Shrink down to the size of a cell, explore a real spleen and help the immune system fight off malaria.</p>
+    <div class="buttons">
+      <a href="#download">Download for Windows</a>
+      <a href="#download" class="secondary">Download for macOS</a>
+    </div>
+    <span class="hint">Scroll down ↓</span>
+  </section>
+
+  <section>
+    <h2>Stage 1: Raise the alarm</h2>
+    <p>Find the hemozoin crystals the parasites left behind and hand them to the sentinel dendritic cells.</p>
+  </section>
+
+  <section>
+    <h2>Stage 2: Release the antibodies</h2>
+    <p>The spleen has changed. Find the antibody secreting cells and burst them to cure the infection.</p>
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <div class="buttons">
+      <a href="#">Download for Windows</a>
+      <a href="#" class="secondary">Download for macOS</a>
+    </div>
+  </section>
+
+  <script type="module">
+    import { initCellsBackground } from "./cells-background.js";
+    // See DEFAULTS in cells-background.js for the options. Exposed on window so the orbit, parallax
+    // and transition settings can be tuned live from the console, e.g.
+    //   cellsBackground.settings.parallaxOrbit = 0.2
+    window.cellsBackground = initCellsBackground({
+      parallax: true,
+      parallaxOrbit: 0.08,
+      parallaxHeight: 2.5,
+      parallaxSmoothing: 0.4,
+      // Transition between the "Stage 1" and "Stage 2" sections (fractions of the page's scroll).
+      transitionStart: 0.2,
+      transitionEnd: 0.7,
+    });
+  </script>
+</body>
+</html>

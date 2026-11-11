@@ -3,13 +3,19 @@
 
 @import "{{ site.theme }}";
 
+// The animated cell background (WebBackground/) is a fixed canvas at z-index -1, so the page
+// colour goes on <html> and <body> stays transparent.
+html {
+  background: #1a0608;
+}
+
 body {
-  background: #ffffff;
+  background: transparent;
 }
 
 .page-header {
-  padding: 40px 20px;
-  background: #ffffff;
+  padding: 60px 20px;
+  background: transparent;
   text-align: center;
   position: relative;
 }
@@ -19,6 +25,57 @@ body {
   width: 100%;
   height: auto;
   display: inline-block;
+  // A thin white outline, so the logo's dark reds stand out against the dark red background.
+  filter:
+    drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 8px 24px rgba(0, 0, 0, 0.5));
+}
+
+// The page content on a dark, frosted-glass panel over the background, with the theme's colours
+// swapped for light ones that read on it.
+.main-content {
+  width: calc(100% - 2rem);
+  margin: 0 auto 3rem;
+  color: #eadcdd;
+  background: rgba(22, 22, 42, 0.42);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  backdrop-filter: blur(8px) saturate(1.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffc46b;
+  }
+
+  h2:not(:first-child) {
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  a {
+    color: #ff9c8f;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 156, 143, 0.4);
+    text-underline-offset: 3px;
+
+    &:hover {
+      color: #ffc2b9;
+      text-decoration-color: currentColor;
+    }
+  }
+
+  // The note under the download link.
+  .download-note {
+    margin-top: -0.25rem;
+    font-size: 0.9rem;
+    color: rgba(234, 220, 221, 0.75);
+  }
+
+  // Older browsers without backdrop-filter: a more solid panel instead, so text stays readable.
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    background: rgba(24, 5, 7, 0.85);
+  }
 }
 
 .partner-logo {
@@ -29,12 +86,18 @@ body {
 
 .unimelb-logo {
   left: 20px;
-  height: 100px;
+  height: 80px;
+  border-radius: 4px;
 }
 
 .doherty-logo {
   right: 20px;
   height: 80px;
+  // Its blue lettering is on a transparent background: a white plate keeps it legible on the dark page.
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 600px) {

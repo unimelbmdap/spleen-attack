@@ -11,6 +11,9 @@ An educational game about the human spleen and its functions.
 
 🎮 [Download the latest release](https://github.com/unimelbmdap/spleen-attack/releases/latest)
 
+By downloading the game, you agree to the [Terms of Use](#terms-of-use) below.
+{: .download-note}
+
 ## System Requirements
 
 - OS: Windows / Mac / Linux
